@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikaTours</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+   <nav class="nav">
+      <div class="logo">TikaTours</div>
+      <ul>
+          <li> <a href="index.html">Home</a></li>
+          
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="team.html">Our Team</a></li>
+         
+      </ul>
+     <div onclick="displaySideBar()" class="menu"><i class="fa-solid fa-bars"></i></div>
+     <button onclick="openBookNow()" class="navBtn">BOOK NOW</button>
+     <script>
+      function openBookNow(){
+          window.location.href='booking.html';
+      }
+     </script>
+
+  </nav>
+
+  <nav class="sideBar" style="background-color: rgba(0, 0, 0, 0.377);">
+      
+      <ul>
+          <li onclick="hideSideBar()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20"><path fill="white" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg></li>
+          <li> <a href="./index.html">Home</a></li>
+          
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="team.html">Our Team</a></li>
+      </ul>
+     
+  </nav>
+   
+   <div class="destinationsContainer">
+    <h1 >Find Out The Best <br> Travel Choice in Africa</h1> 
+    <p>Choose your ideal destination, accommodation, and travel package to make your vacation experience unforgettable.</p>
+
+
+    <div class="destionationNavContainer">
+         <div class="destinationNav">
+            <button class="activeBtn" id="destBtn" onclick="addDestinationsPage()">DESTINATION</button>
+            <button id="accomodationBtn" onclick="addAccomodationPage()">ACCOMODATION</button>
+            <button id="transBtn" onclick="addTransportationPage()">TRANSPORTATION</button>
+         </div>
+    </div>
+    <div class="mainContainer">
+    <!-- Destinations -->
+
+    <div class="subDestinatinationsContainer " id="subDestinatinationsContainer">
+        <!-- MombasaCard -->
+
+      <div class="mombasaLoctaionCard" id="mombasaCard"  >
+         <div class="mombasaLocationBackground" id="mombasaOldContent" onclick="showMombasaDetails()">
+             <div class="locationText">
+               <div class="locationPlace">
+                  <h3>Diani</h3>
+                  <p>Coastal Region, Kenya.</p>
+               </div>
+               <div class="locationPrice">
+                  <p>Starting From</p>
+                  <h3>195$ </h3>
+               </div>
+             </div>
+         
+         </div>
+         <div class="mombasaDetails" id="mombasaNewContent">
+            <div class="destinationStars" >
+               <div class="back" id="hideDetails" onclick="hideMombasaDetails()" >
+                  <i class="fa-solid fa-x"></i>
+               </div>
+               <div class="starz">
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-regular fa-star" ></i>
+               </div>
+
+            </div>
+            <h3>Packages</h3>
+            <ul>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> 3 Nights 4 Days.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Half board meal.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Tour to Robinson Island Snorked</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Kongo River Sunset Cruise </li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Comes with two other packages.Contact us for more</li>
+            </ul>
+            <div class="destinationBtn">
+               <button>BOOK NOW <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            
+         </div>
+
+      </div>
+
+      <!-- capeTownCrd -->
+
+      <div class="capeTownloctaionCard" style="background-image: url('./images/capeTown.jpg');">
+         <div class="capeTownlocationBackground" onclick="showCapeTownDetails()">
+             <div class="locationText">
+               <div class="locationPlace">
+                  <h3>Cape Town</h3>
+                  <p>Coastal Region, Kenya.</p>
+               </div>
+               <div class="locationPrice">
+                  <p>Starting From</p>
+                  <h3>1300$ </h3>
+               </div>
+             </div>
+         
+         </div>
+
+         <div class="capeTownDetails" >
+            <div class="destinationStars" >
+               <div class="back" id="hideDetails" onclick="hideCapeTownDetails()" >
+                  <i class="fa-solid fa-x"></i>
+               </div>
+               <div class="starz">
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               </div>
+
+            </div>
+            <h3>Packages</h3>
+            <ul>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> 5 nights accomodation.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Tour Cape Town and water cruise</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Photography</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Airport transfers and Cape Town transfers. </li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Giude and facilitation fee.</li>
+            </ul>
+            <div class="destinationBtn">
+               <button>BOOK NOW <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            
+         </div>
+
+         
+      </div>
+
+      <!-- serengeti -->
+
+      <div class="serengetiLoctaionCard" style="background-image: url('./images/fiveZebra.jpg');">
+         <div class="serengetiLocationBackground"onclick="showSerengetiDetails()">
+             <div class="locationText">
+               <div class="locationPlace">
+                  <h3>Serengeti </h3>
+                  <p>Coastal Region, Kenya.</p>
+               </div>
+               <div class="locationPrice">
+                  <p>Starting From</p>
+                  <h3>400$ </h3>
+               </div>
+             </div>
+         
+         </div>
+         <div class="serengetiDetails" >
+            <div class="destinationStars" >
+               <div class="back" id="hideDetails" onclick="hideSerengetiDetails()" >
+                  <i class="fa-solid fa-x"></i>
+               </div>
+               <div class="starz">
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-regular fa-star" ></i>
+               <i style="color: #FFA534;" class="fa-regular fa-star" ></i>
+               </div>
+
+            </div>
+            <h3>Packages</h3>
+            <ul>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Hotel & Restaurant.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Game Drive.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Team building & Retreats.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> TourDestination Management. </li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> City Tours & Excursions.</li>
+            </ul>
+            <div class="destinationBtn">
+               <button>BOOK NOW <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+         </div>
+            
+      </div>
+      
+       <!-- MountKilimanjaro -->
+
+
+      <div class="kilimanjaroLoctaionCard" style="background-image: url('./images/MountKilimanjaro.jpg');">
+         <div class="kilimanjaroLocationBackground" onclick="showKilimanjaroDetails()">
+            <div class="locationText">
+              <div class="locationPlace">
+                 <h3>Mount Kilimanjaro </h3>
+                 <p>Coastal Region, Tanzania.</p>
+              </div>
+              <div class="locationPrice">
+                 <p>Starting From</p>
+                 <h3>200$ </h3>
+              </div>
+            </div>
+        
+        </div>
+         
+         
+
+         <div class="kilimanjaroDetails" >
+            <div class="destinationStars" >
+               <div class="back" id="hideDetails" onclick="hideKilimanjaroDetails()" >
+                  <i class="fa-solid fa-x"></i>
+               </div>
+               <div class="starz">
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               </div>
+
+            </div>
+            <h3>Packages</h3>
+            <ul>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Transport to and from.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Visit to Vasco Da Gama Pillar</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Tour of Mombasa Town</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Visit to Fort Jesus </li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Visit to the beaches of Mombasa</li>
+            </ul>
+            <div class="destinationBtn">
+               <button>BOOK NOW <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+         </div>
+         
+      </div>
+
+
+    <!-- Nairobi National Park -->
+
+
+      <div class="nairobiParkLoctaionCard" style="background-image: url('./images/serengeti.jpg');">
+         <div class="nairobiParkLocationBackground" onclick="showNairobiParkDetails()" >
+             <div class="locationText">
+               <div class="locationPlace">
+                  <h3>Nairobi National Park</h3>
+                  <p>Central Region, Kenya.</p>
+               </div>
+               <div class="locationPrice">
+                  <p >Starting From</p>
+                  <h3>50$ </h3>
+               </div>
+             </div>
+         
+         </div>
+
+         <div class="nairobiParkDetails" >
+            <div class="destinationStars" >
+               <div class="back" id="hideDetails" onclick="hideNairobiParkDetails()" >
+                  <i class="fa-solid fa-x"></i>
+               </div>
+               <div class="starz">
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               </div>
+
+            </div>
+            <h3>Packages</h3>
+            <ul>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Vehicle free entry.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Tour guide.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Mineral water.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Pick up in Nairobi CBD. </li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Drop off in Nairobi CBD.</li>
+            </ul>
+            <div class="destinationBtn">
+               <button>BOOK NOW <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+         </div>
+         
+      </div>
+
+      <!-- amboseli  -->
+
+      <div class="amboseliLoctaionCard" style="background-image: url('./images/image4.jpg');">
+         <div class="amboseliLocationBackground" onclick="showAmboseliDetails()">
+             <div class="locationText">
+               <div class="locationPlace">
+                  <h3>Amboseli</h3>
+                  <p>Rift Valley Province, Kenya.</p>
+               </div>
+               <div class="locationPrice">
+                  <p>Starting From</p>
+                  <h3>1080$ </h3>
+               </div>
+             </div>
+         
+         </div>
+
+         <div class="amboseliDetails" >
+            <div class="destinationStars" >
+               <div class="back" id="hideDetails" onclick="hideAmboseliParkDetails()" >
+                  <i class="fa-solid fa-x"></i>
+               </div>
+               <div class="starz">
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               </div>
+
+            </div>
+            <h3>Packages</h3>
+            <ul>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> All Flights during the Tour.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Accomodation.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Roundtrip airport.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Meals specified. </li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> All activities.</li>
+            </ul>
+            <div class="destinationBtn">
+               <button>BOOK NOW <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+         </div>
+      </div>
+
+
+    <!-- chalbiDesert -->
+
+      <div class="chalbiLoctaionCard" style="background-image: url('./images/image4.jpg');" >
+         <div class="chalbiLocationBackground" onclick="showChalbiDetails()">
+             <div class="locationText">
+               <div class="locationPlace">
+                  <h3>Chalbi Desert</h3>
+                  <p>Northern, Kenya.</p>
+               </div>
+               <div class="locationPrice">
+                  <p>Starting From</p>
+                  <h3>355$ </h3>
+               </div>
+             </div>
+         
+         </div>
+
+         <div class="chalbiDetails" >
+            <div  class="destinationStars" >
+               <div  class="back" id="hideDetails" onclick="hideChalbiDetails()" >
+                  <i class="fa-solid fa-x"></i>
+               </div>
+               <div class="starz">
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               </div>
+
+            </div>
+            <h3>Packages</h3>
+            <ul>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> 3 Nights.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Desert Cruise.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Transportation.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Meals on fullboard basis. </li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Swimming in L.Turkana</li>
+            </ul>
+            <div class="destinationBtn">
+               <button>BOOK NOW <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+         
+         
+      </div>
+      </div>
+     
+      <!-- RWanda -->
+      <div class="rwandaLoctaionCard" style="background-image: url('./images/pexels-ria-patel-1263899-2407103.jpg');">
+         <div class="rwandaLocationBackground" onclick="showRwandaDetails()">
+             <div class="locationText">
+               <div class="locationPlace">
+                  <h3>Rwanda</h3>
+                  <p>Eastern, Africa.</p>
+               </div>
+               <div class="locationPrice">
+                  <p>Starting From</p>
+                  <h3>600$ </h3>
+               </div>
+             </div>
+         
+         </div>
+
+         <div class="rwandaDetails" >
+            <div  class="destinationStars" >
+               <div  class="back" id="hideDetails" onclick="hideRwandaDetails()" >
+                  <i class="fa-solid fa-x"></i>
+               </div>
+               <div class="starz">
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               </div>
+
+            </div>
+            <h3>Packages</h3>
+            <ul>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Lake Kivu Boat.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Meals FB & Drinking water.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Nyungwe Canopy.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Road transport & Accomodation.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Kigali City Tour.</li>
+            </ul>
+            <div class="destinationBtn">
+               <button>BOOK NOW <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+         
+         
+         </div>
+         
+      </div>
+
+      <!-- Tsavo East & West -->
+
+      <div class="tsavoLoctaionCard" style="background-image: url('./images/image8.jpg');">
+         <div class="tsavoLocationBackground" onclick="showTsavoDetails()">
+             <div class="locationText">
+               <div class="locationPlace">
+                  <h3>Tsavo East & West</h3>
+                  <p>Coastal Region, Kenya.</p>
+               </div>
+               <div class="locationPrice">
+                  <p>Starting From</p>
+                  <h3>30$ </h3>
+               </div>
+             </div>
+         
+         </div>
+         <div class="tsavoDetails" >
+            <div  class="destinationStars" >
+               <div  class="back" id="hideDetails" onclick="hideTsavoDetails()" >
+                  <i class="fa-solid fa-x"></i>
+               </div>
+               <div class="starz">
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               </div>
+
+            </div>
+            <h3>Packages</h3>
+            <ul>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Transport to and from.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Visit to Vasco Da Gama Pillar</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Tour of Mombasa Town</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Visit to Fort Jesus </li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Visit to the beaches of Mombasa</li>
+            </ul>
+            <div class="destinationBtn">
+               <button>BOOK NOW <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+         
+         
+         </div>
+         
+      </div>
+
+
+    </div>
+
+    
+    
+
+    <!-- Accomodation -->
+    <div class="accomodationContainer" id="accomodationContainer">
+      <!-- charityHotel -->
+      <div class="charityHotelCard" style="background-image: url('./images/Hotel2.jpg');">
+         <div class="charityHotelBackground" onclick="showCharityHotelDetails()">
+             <div class="locationText">
+               <div class="locationPlace">
+                  <h3>Charity Hotel</h3>
+                  <p>Tanzania.</p>
+               </div>
+               <div class="locationPrice">
+                  <p>Starting From</p>
+                  <h3>600$ </h3>
+               </div>
+             </div>
+         
+         </div>
+
+         <div class="charityHotelDetails" >
+            <div  class="destinationStars" >
+               <div  class="back" id="hideDetails" onclick="hideCharityHotelDetails()" >
+                  <i class="fa-solid fa-x"></i>
+               </div>
+               <div class="starz">
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               </div>
+
+            </div>
+            <h3>Packages</h3>
+            <ul>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Lake Kivu Boat.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Meals FB & Drinking water.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Nyungwe Canopy.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Road transport & Accomodation.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Kigali City Tour.</li>
+            </ul>
+         
+         
+         
+         </div>
+         
+      </div>
+
+      <!-- SaltLink Hotel -->
+      <div class="charityHotelCard" style="background-image: url('./images/Hotel1.jpg');">
+         <div class="charityHotelBackground" onclick="showCharityHotelDetails()">
+             <div class="locationText">
+               <div class="locationPlace">
+                  <h3>Salt Link Safari Lodge</h3>
+                  <p>Tsavo.</p>
+               </div>
+               <div class="locationPrice">
+                  <p>Starting From</p>
+                  <h3>250$ </h3>
+               </div>
+             </div>
+         
+         </div>
+
+         <div class="charityHotelDetails" >
+            <div  class="destinationStars" >
+               <div  class="back" id="hideDetails" onclick="hideCharityHotelDetails()" >
+                  <i class="fa-solid fa-x"></i>
+               </div>
+               <div class="starz">
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               </div>
+
+            </div>
+            <h3>Packages</h3>
+            <ul>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Lake Kivu Boat.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Meals FB & Drinking water.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Nyungwe Canopy.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Road transport & Accomodation.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Kigali City Tour.</li>
+            </ul>
+          
+         
+         
+         </div>
+         
+      </div>
+
+      <!-- hotel3 -->
+      <div class="charityHotelCard" style="background-image: url('./images/Hotel3.jpg');">
+         <div class="charityHotelBackground" onclick="showCharityHotelDetails()">
+             <div class="locationText">
+               <div class="locationPlace">
+                  <h3>Charity Hotel</h3>
+                  <p>Tanzania.</p>
+               </div>
+               <div class="locationPrice">
+                  <p>Starting From</p>
+                  <h3>600$ </h3>
+               </div>
+             </div>
+         
+         </div>
+
+         <div class="charityHotelDetails" >
+            <div  class="destinationStars" >
+               <div  class="back" id="hideDetails" onclick="hideCharityHotelDetails()" >
+                  <i class="fa-solid fa-x"></i>
+               </div>
+               <div class="starz">
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               <i style="color: #FFA534;" class="fa-solid fa-star"></i>
+               </div>
+
+            </div>
+            <h3>Packages</h3>
+            <ul>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Lake Kivu Boat.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Meals FB & Drinking water.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Nyungwe Canopy.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Road transport & Accomodation.</li>
+               <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="18px" fill="white"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z"/></svg> Kigali City Tour.</li>
+            </ul>
+         
+         
+         
+         </div>
+         
+      </div>
+
+
+    </div>
+
+    <!-- transportationCArd -->
+
+    <div class="transportationContainer" id="transportationContainer">
+         <p>To make transportation arrangements please contact the agency. <br> Our contact info:</p>
+         <div class="phoneNos">
+            <p>Phone Number: </p>
+        <div class="cells">+254 752 480 340 <br> +255 757 256330</div>
+     
+        </div>
+        <div  class="footerContact">
+            <a style="color: black;" href="https://www.instagram.com/tikatours.safaris?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+            <a style="color: black;" href="https://www.facebook.com/profile.php?id=100090990517962"><i class="fa-brands fa-facebook-f"></i></a>
+            <a style="color: black;" href=""><i class="fa-brands fa-x-twitter"></i></a>
+            
+            
+            
+        </div>
+          
+    </div>
+    </div>
+   </div>
+
+   <footer>
+      <div class="companyDetails">
+          <h3>TikaTours</h3>
+          <p>Address: 1881 Taveta.</p>
+          <div class="phoneNos">
+              <p>Phone Number: </p>
+          <div class="cells">+254 752 480 340 <br> +255 757 256330</div>
+       
+          </div>
+          <div class="footerContact">
+              <a href="https://www.instagram.com/tikatours.safaris?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100090990517962"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              
+              
+              
+          </div>
+  
+  
+      </div>
+      <div class="pages">
+          <h3>Pages</h3>
+          <ul>
+              
+                 <li> <a href="index.html">Home</a> </li> 
+                 <li><a href="booking.html">Booking</a> </li> 
+                 <li><a href="gallery.html">Gallery</a> </li> 
+                  <li> <a href="destinations.html">Destinations</a></li>
+                  <li> <a href="team.html">Our Team</a></li>
+          </ul>
+      </div>
+      <div class="impertantLinks">
+          <p>© CopyRights <br> Made with love by <a href="https://josephkabaka.github.io/CodeAlpha_Portfolio/" target="_blank">Joseph Kabaka</a></p>
+      </div>
+    </footer>
+</body>
+<script src="destination.js"></script>
+</html>

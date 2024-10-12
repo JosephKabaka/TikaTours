@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>TikaTours</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+    
+        
+    <nav class="nav">
+        <div class="logo">TikaTours</div>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+           <li><a href="team.html">Our Team.</a></li>
+           
+        </ul>
+       <div onclick="displaySideBar()" class="menu"><i class="fa-solid fa-bars"></i></div>
+       <button onclick="openBookNow()" class="navBtn">BOOK NOW</button>
+       <script>
+        function openBookNow(){
+            window.location.href='booking.html';
+        }
+       </script>
+
+    </nav>
+
+    <nav class="sideBar">
+        
+        <ul>
+            <li onclick="hideSideBar()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20" width="20"><path fill="white" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg></li>
+            <li> <a href="index.html">Home</a></li>
+            
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="team.html">Our Team</a></li>
+        </ul>
+       
+    </nav>
+    <div class="home ">
+    <div class="text">
+        <div class="homeAbout">
+            <h1>Explore The <br> Majestic Africa <br> With Us</h1>
+        <button onclick="openDestination()" >DESTINATIONS <i class="fa-solid fa-arrow-right-long"></i></button>
+        <script>
+            function openDestination(){
+                window.location.href='destinations.html';
+            }
+        </script>
+        <div class="homeAboutText">
+            <div class="p">
+                <div class="svgBackGround"><i class="fa-solid fa-plane"></i></div>
+                <p>  Explore Africa's wonders <br> with our trusted agency.</p>
+            </div>
+            <div class="p">
+                <div class="svgBackGround"><i class="fa-solid fa-mountain-sun"></i></div> 
+                <p> Experience unforgettable <br> journeys across Africa's landscapes.</p>
+            </div>
+        </div>
+ 
+        </div>
+        <div class="homeContact">
+            <div class="contactIcon"><a href="https://www.facebook.com/profile.php?id=100090990517962"> <i class="fa-brands fa-facebook-f"></i></a></div>
+            <div class="contactIcon"> <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+            <div class="contactIcon"> <a href="https://www.instagram.com/tikatours.safaris?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a></div>
+        </div>
+        
+        
+    </div>
+
+</div>
+
+<!-- FavDestinations -->
+ <h3 style="color: black;text-decoration: underline;padding: 10px;">Our Favourite Destinations</h3>
+ <div class="favDestinations ">
+
+  <div class="destinationImage img1">
+    <div class="placeCardText">
+        <div class="place">
+            <h3>Mombasa</h3>
+            <p>Coastal Region, Kenya. </p>
+       
+        </div>
+        <div class="icon" onclick="openDestination()" >
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m356-300 204-204v90h80v-226H414v80h89L300-357l56 57ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        </div>
+     
+    </div>
+  </div>
+  <div class="destinationImage img2">
+    <div class="placeCardText">
+        <div class="place">
+            <h3>Cape Town</h3>
+            <p>Western Cape Province, South Africa. </p>
+       
+        </div>
+        <div class="icon" onclick="openDestination()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m356-300 204-204v90h80v-226H414v80h89L300-357l56 57ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        </div>
+    </div>
+  </div>
+  <div class="destinationImage img3">
+    <div class="placeCardText">
+        <div class="place">
+            <h3>Serengeti National Park</h3>
+            <p>Eastern Mara Region, Tanzania. </p>
+       
+        </div>
+        <div class="icon" onclick="openDestination()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m356-300 204-204v90h80v-226H414v80h89L300-357l56 57ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        </div>
+    </div>
+  </div>
+  <div class="destinationImage img4">
+
+    <div class="placeCardText">
+        <div class="place">
+            <h3>Mount Kilimanjaro</h3>
+            <p>Kilimanjaro Region, Tanzania. </p>
+       
+        </div>
+        <div class="icon" onclick="openDestination()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m356-300 204-204v90h80v-226H414v80h89L300-357l56 57ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        </div>
+    </div>
+  </div>
+
+ </div>
+ <div class="destinationBtn">
+    <button onclick="viewDestinations()">VIEW ALL <i class="fa-solid fa-arrow-right-long"></i></button>
+    <script>
+        function viewDestinations(){
+            window.location.href="destinations.html";
+        } 
+    </script>
+ </div>
+
+ <!-- bookingProcedure -->
+
+ <div class="bookingProcedureContainer">
+
+    <div class="bookingProcedureText">
+       <h2>Experience The <br> New Adventure</h2>
+       <p>Booking a trip with TikaTours is a straightforward process that ensures your travel plans are organized and stress-free from start to finish. <br>
+        There is a process to follow while making the bookings.</p>
+        <div class="bookingProcedureStep">
+            <div class="stepIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                 
+            </div>
+            <div class="stepText">
+                <h3>Choose Your Destination <br> and Travel Package</h3>
+                <p>Explore the various travel packages <br> and destinations the agency offers. <br>
+                    Select the option that best fits <br> your travel needs and budget.</p>
+            </div>
+            
+        </div>
+        <div class="bookingProcedureStep">
+            <div class="stepIcon">
+                <svg style="margin: 10px;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                 
+            </div>
+            <div class="stepText">
+                <h3>Contact the Agency and <br> Confirm Availability</h3>
+                <p>Reach out to the agency to <br> check availability for your desired dates.
+                  <br>  Confirm details like departure, <br> number of travelers, and <br> special requests.</p>
+            </div>
+            
+        </div>
+        <div class="bookingProcedureStep">
+            <div class="stepIcon">
+                <svg style="margin: 10px;"  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M560-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM280-320q-33 0-56.5-23.5T200-400v-320q0-33 23.5-56.5T280-800h560q33 0 56.5 23.5T920-720v320q0 33-23.5 56.5T840-320H280Zm80-80h400q0-33 23.5-56.5T840-480v-160q-33 0-56.5-23.5T760-720H360q0 33-23.5 56.5T280-640v160q33 0 56.5 23.5T360-400Zm440 240H120q-33 0-56.5-23.5T40-240v-440h80v440h680v80ZM280-400v-320 320Z"/></svg>
+                 
+            </div>
+            <div class="stepText">
+                <h3>Make Payment and Receive Confirmation</h3>
+                <p>Complete the payment process. 
+                  <br>  Receive booking confirmation, including itinerary, <br> tickets, and essential travel documents.</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="bookingProcedureImage">
+        <!-- <div class="vid">
+            <video width="100%" height="100%" controls style="border-radius:15px;">
+                <source src="./videos/hippo.mp4" type="video/mp4" >
+                Your browser does not support the video tag.
+              </video>
+        </div> -->
+  
+    </div>
+
+
+
+
+ </div>
+
+ <!-- CustomerReviews -->
+<h3 style="color: black; text-decoration: underline; margin: 15px 10px; font-weight: 500;"> Customer's Reviews</h3>
+ <div class="customerReviewContainer">
+
+    <div class="customerReviewCard">
+        <p ><i class="fa-solid fa-quote-left"></i> <br> TikaTours made my Mount Kilimanjaro trip unforgettable! Great team, expert guides, and amazing views. Highly recommend!  <i class="fa-solid fa-quote-right"></i></p>
+        <div class="stars">
+            <i class="fa-solid fa-star" style="color:#FFA534"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+        </div>
+        <div class="customerProfile">
+            <img src="./images/profile1.jpg" alt="" width="60"height="60">
+            <div class="profileText">
+                <h4>Mark Weston</h4>
+                <p>Mount Kimanjaro.</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="customerReviewCard">
+        <p ><i class="fa-solid fa-quote-left"></i> <br> This Agency provided an unforgettable Serengeti experience! The wildlife, landscapes, and expert guides made the safari truly magical. Highly recommend for a perfect adventure!  <i class="fa-solid fa-quote-right"></i></p>
+        <div class="stars">
+            <i class="fa-solid fa-star" style="color:#FFA534"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+        </div>
+        <div class="customerProfile">
+            <img src="./images/profile4.jpg" alt="" width="60"height="60">
+            <div class="profileText">
+                <h4>Grace Campbell</h4>
+                <p>Serengeti National Park</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="customerReviewCard third">
+        <p ><i class="fa-solid fa-quote-left"></i> <br>
+            Your company gave me an incredible Cape Town experience! From the stunning Table Mountain views to the vibrant city, everything was perfectly organized. Highly recommend! 
+            <i class="fa-solid fa-quote-right"></i></p>
+        <div class="stars">
+            <i class="fa-solid fa-star" style="color:#FFA534"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+            
+        </div>
+        <div class="customerProfile">
+            <img src="./images/profile3.jpg" alt="" width="60"height="60">
+            <div class="profileText">
+                <h4>Angela Clare</h4>
+                <p>Cape Town</p>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="customerReviewCard forth">
+        <p ><i class="fa-solid fa-quote-left"></i> <br>  You guys made my trip to Mombasa amazing! From the beautiful beaches to the rich culture, everything was well-planned and seamless. Highly recommend for a fantastic coastal getaway! <i class="fa-solid fa-quote-right"></i></p>
+        <div class="stars">
+            <i class="fa-solid fa-star" style="color:#FFA534"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+            <i class="fa-solid fa-star" style= " color: #FFA534;"></i>
+        </div>
+        <div class="customerProfile">
+            <img src="./images/profile2.jpg" alt="" width="60"height="60">
+            <div class="profileText">
+                <h4>Rank Peterson</h4>
+                <p>Mombasa, Kenya</p>
+            </div>
+            
+        </div>
+    </div>
+
+ </div>
+ <!-- Our Team -->
+ <h3 style="color: black; text-decoration: underline; margin-left: 10px; font-size: large;">Meet Our Team.</h3>
+ <div class="teamContainer">
+
+    <div class="stuffCard">
+        <div class="stuffimage">
+           <img src="./images/team1.jpg" alt="">
+        </div>
+        <div class="stufftext">
+            <h4>Eric Mdah</h4>
+            <p>CEO/Founder</p>
+            <div class="contact">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="stuffCard">
+        <div class="stuffimage">
+           <img src="./images/team5.jpg" alt="">
+        </div>
+        <div class="stufftext">
+            <h4>Joseph Kabaka</h4>
+            <p>Web Designer/developer.</p>
+            <div class="contact">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                
+                
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div class="stuffCard">
+        <div class="stuffimage">
+           <img src="./images/Team3.jpg" alt="">
+        </div>
+        <div class="stufftext">
+            <h4>Jue Rules.</h4>
+            <p>Taem photographer.</p>
+            <div class="contact">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="stuffCard hideMobile">
+        <div class="stuffimage">
+           <img src="./images/team6.jpg" alt="">
+        </div>
+        <div class="stufftext">
+            <h4>Sunday Manara</h4>
+            <p>Tour Guide.</p>
+            <div class="contact">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="stuffCard hide">
+        <div class="stuffimage">
+           <img src="./images/Team2.jpg" alt="">
+        </div>
+        <div class="stufftext">
+            <h4>Johan Maramba.</h4>
+            <p>Senior Driver.</p>
+            <div class="contact">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="stuffCard hide">
+        <div class="stuffimage">
+           <img src="./images/team7.jpg" alt="">
+        </div>
+        <div class="stufftext">
+            <h4>Mbadi Malowe</h4>
+            <p>Reservation Manager.</p>
+            <div class="contact">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    
+ </div>
+ <div class="stuffbtn">
+    <button>VIEW ALL</button>
+
+</div>
+
+
+
+
+
+
+ <!-- Frequently asked Questions -->
+  <h3 style="color: black; text-decoration: underline; margin-left: 10px; font-size: large;">FAQs.</h3>
+  <div class="FAQContainer">
+    <!-- question1 -->
+    <div class="questionAnswer" >
+        
+        <div class="question1" >
+           <p > What services does your travel agency offer? </p>
+           <div class="dropIcon" id="dropIcon"  onclick="showAnswer()">
+            <i class="fa-solid fa-chevron-down"></i>
+
+           </div>
+           <div class="upIcon" id="upIcon">
+            <i onclick="hideanswer()"  class="fa-solid fa-chevron-up"></i>
+           </div>
+           
+        </div>
+        <div class="answer1" id="answer1">
+            <p>We offer a wide range of services, including flight bookings, hotel reservations, guided tours, and car rentals. We also provide customized travel packages to fit your preferences and budget.</p>
+        </div>
+    </div>
+    <!-- question2 -->
+    <div class="questionAnswer" >
+        
+        <div class="question2"  >
+           <p > How do I book a trip with your agency?</p>
+           <div class="dropIcon" id="dropIcon2">
+            <i onclick="showAnswer2()" class="fa-solid fa-chevron-down"></i>
+
+           </div>
+           <div class="upIcon" id="upIcon2">
+            <i onclick="hideanswer2()"  class="fa-solid fa-chevron-up"></i>
+           </div>
+        </div>
+        <div class="answer1" id="answer2">
+            <p>You can book a trip by browsing our available destinations on our website. Once you select a destination, click the “Book Now” button, fill out the booking form, and submit it. We will confirm your booking via email.</p>
+        </div>
+    </div>
+    <!-- question3 -->
+    <div class="questionAnswer" >
+        
+        <div class="question3"  >
+           <p > What payment methods do you accept?</p>
+           <div class="dropIcon" id="dropIcon3">
+            <i onclick="showAnswer3()" class="fa-solid fa-chevron-down"></i>
+
+           </div>
+           <div class="upIcon" id="upIcon3">
+            <i onclick="hideanswer3()"  class="fa-solid fa-chevron-up"></i>
+           </div>
+        </div>
+        <div class="answer1" id="answer3">
+            <p>We accept payments via credit/debit cards, mobile money (M-Pesa), and bank transfers. Payment details will be provided after booking confirmation.</p>
+        </div>
+    </div>
+
+    <!-- Question4 -->
+    <div class="questionAnswer" >
+        
+        <div class="question4"  >
+           <p > Can I customize my travel package?</p>
+           <div class="dropIcon" id="dropIcon4">
+            <i onclick="showAnswer4()" class="fa-solid fa-chevron-down"></i>
+
+           </div>
+           <div class="upIcon" id="upIcon4">
+            <i onclick="hideanswer4()"  class="fa-solid fa-chevron-up"></i>
+           </div>
+        </div>
+        <div class="answer1" id="answer4">
+            <p>Yes! We offer flexible travel packages. You can reach out to our team to customize your itinerary based on your preferences and budget.</p>
+        </div>
+    </div>
+    <!-- question5 -->
+    <div class="questionAnswer" >
+        
+        <div class="question5"  >
+           <p > What is your cancellation policy?</p>
+           <div class="dropIcon" id="dropIcon5">
+            <i onclick="showAnswer5()" class="fa-solid fa-chevron-down"></i>
+
+           </div>
+           <div class="upIcon" id="upIcon5">
+            <i onclick="hideanswer5()"  class="fa-solid fa-chevron-up"></i>
+           </div>
+        </div>
+        <div class="answer1" id="answer5">
+            <p>You can cancel your booking up to 7 days before the departure date for a full refund. Cancellations made less than 7 days prior may incur a fee. Please refer to our detailed cancellation policy on the terms and conditions page</p>
+        </div>
+    </div>
+    <!-- question6 -->
+    <div class="questionAnswer" >
+        
+        <div class="question6"  >
+           <p > Are there any group discounts available?</p>
+           <div class="dropIcon" id="dropIcon6">
+            <i onclick="showAnswer6()" class="fa-solid fa-chevron-down"></i>
+
+           </div>
+           <div class="upIcon" id="upIcon6">
+            <i onclick="hideanswer6()"  class="fa-solid fa-chevron-up"></i>
+           </div>
+        </div>
+        <div class="answer1" id="answer6">
+            <p>Yes, we offer discounts for groups of 2(couples) or more people. Contact us for more information about group pricing and special offers.</p>
+        </div>
+    </div>
+
+  </div>
+
+ <!-- footer -->
+  <footer>
+    <div class="companyDetails">
+        <h3>TikaTours</h3>
+        <p>Address: 1881 Taveta.</p>
+        <div class="phoneNos">
+            <p>Phone Number: </p>
+        <div class="cells">+254 752 480 340 <br> +255 757 256330</div>
+     
+        </div>
+        <div class="footerContact">
+            <a href="https://www.instagram.com/tikatours.safaris?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100090990517962"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            
+            
+            
+        </div>
+
+
+    </div>
+    <div class="pages">
+        <h3>Pages</h3>
+        <ul>
+            <li>Home</li>
+               <li> <a href="index.html">About</a> </li> 
+               <li><a href="booking.html">Booking</a> </li> 
+               <li><a href="gallery.html">Gallery</a> </li> 
+                <li> <a href="destinations.html">Destinations</a></li>
+                <li> <a href="team.html">Our Team</a></li>
+        </ul>
+    </div>
+    <div class="impertantLinks">
+        <p>© CopyRights <br> Made with love by <a href="https://josephkabaka.github.io/CodeAlpha_Portfolio/" target="_blank">Joseph Kabaka</a></p>
+    </div>
+  </footer>
+  
+ 
+    
+</body>
+<script src="index.js"></script>
+</html>

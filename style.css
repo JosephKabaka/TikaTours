@@ -1,0 +1,1703 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+    color: white;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url('./images/fiveZebra.jpg');
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    /* border: 2px solid transparent; */
+    color: white;
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+}
+ 
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit; /* Use the same background image */
+    background-size: inherit;
+    filter: brightness(0.5); /* Adjust the brightness */
+    z-index: 1; /* Place it behind the text */
+    opacity: 0.7; /* Optional: Adjust transparency */
+}
+.home > * {
+    position: relative;
+    z-index: 2; /* Bring the text above the image */
+}
+
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(to bottom,#13485a, #13485a);
+}
+.nav ul{
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:row ;
+    list-style-type: none;
+    width: 50%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.nav li{
+    border-radius: 10px;
+    padding: 5px;
+}
+.nav li:hover{
+    background-color: rgba(255, 255, 255, 0.196);
+    transition: background-color 1s ease;
+}
+.logo{
+    font-family: "Pacifico", cursive; 
+    font-size: larger; 
+}
+.sideBar{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+     min-width: 200px; 
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    display: none;
+    z-index: 999;
+    padding: 10px;
+    
+}
+.sideBar ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sideBar li:not(:first-child){
+    
+    padding: 5px;
+    border-radius: 15px;
+    
+}
+.sideBar li:not(:first-child):hover{
+    background-color: rgba(255, 255, 255, 0.247);
+    transition: background-color 1s ease;
+}
+.menu{
+    display: none;
+    margin-right: 10px;
+}
+.nav .navBtn{
+    
+    background: transparent;
+    padding: 10px 15px;
+    font-family: "Quicksand", sans-serif;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+.nav .navBtn:hover{
+    color: #13485a;
+    background: white;
+    border: none;
+    transition: background-color 1s ease;
+}
+.text{
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    padding: 10px;
+}
+.homeAbout{
+    
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.homeAbout h1{
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+.homeAbout button{
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.homeAbout button:hover{
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+.homeAboutText{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.p{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+    align-items: center;
+    
+}
+.svgBackGround{
+    background-color: rgba(255, 255, 255, 0.263);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;  
+     margin-right: 10px; 
+    
+}
+
+.homeContact{
+
+    width: 10%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.homeContact a{
+    
+    color: white;
+}
+.contactIcon{
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.263);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+}
+.favDestinations{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 20px;
+
+}
+.img1{
+    background-image: url('./images/mombasa.jpg');
+    /* background-position: center; */
+    background-size: cover;
+    grid-row: span 2;
+    border-radius: 20px;
+    position: relative;
+}
+.img1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit; /* Use the same background image */
+    background-size: inherit;
+    filter: brightness(0.6); /* Adjust the brightness */
+    z-index: 1; 
+    border-radius: inherit;/* Place it behind the text */
+    opacity: 0.7; /* Optional: Adjust transparency */
+}
+.img1 > * {
+    position: relative;
+    z-index: 2; /* Bring the text above the image */
+}
+.img2{
+    background-image: url('./images/capeTown.jpg');
+    /* background-position: center; */
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    
+}
+.img2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit; /* Use the same background image */
+    background-size: inherit;
+    filter: brightness(0.6); /* Adjust the brightness */
+    z-index: 1; 
+    border-radius: inherit;/* Place it behind the text */
+    opacity: 0.7; /* Optional: Adjust transparency */
+}
+.img2 > * {
+    position: relative;
+    z-index: 2; /* Bring the text above the image */
+}
+.img3{
+    background-image: url('./images/serengeti.jpg');
+    /* background-position: center; */
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+}
+.img3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit; /* Use the same background image */
+    background-size: inherit;
+    filter: brightness(0.6); /* Adjust the brightness */
+    z-index: 1; 
+    border-radius: inherit;/* Place it behind the text */
+    opacity: 0.7; /* Optional: Adjust transparency */
+}
+.img3 > * {
+    position: relative;
+    z-index: 2; /* Bring the text above the image */
+}
+ .img4{
+    background-image: url('./images/MountKilimanjaro.jpg');
+    background-position: center;
+     background-size: cover; 
+    grid-column: span 2;
+    border-radius: 20px;
+    position: relative;
+} 
+.img4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit; 
+    background-size: inherit;
+    filter: brightness(0.6); /* Adjust the brightness */
+    z-index: 1; 
+    border-radius: inherit;/* Place it behind the text */
+    opacity: 0.7; /* Optional: Adjust transparency */
+}
+.img4 > * {
+    position: relative;
+    z-index: 2; /* Bring the text above the image */
+}
+.placeCardText{
+    
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding: 20px;
+    justify-content: space-between;
+}
+.place h3{
+    font-weight: 500;
+}
+.place p{
+    font-size: small;
+}
+.destinationBtn{
+    
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destinationBtn button{
+    padding:10px 25px;
+    color: white;
+    border: none;
+    font-family: "Quicksand", sans-serif;
+    background-color: #13485a;
+    border-radius: 20px;
+}
+.destinationBtn button:hover{
+    border: 2px solid #13485a;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.bookingProcedureContainer{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 15px;
+
+}
+
+.bookingProcedureText{
+    width: 50%;
+}
+.bookingProcedureStep{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.stepText{
+    margin: 5px;
+}
+.stepIcon{
+    background-color:#13485a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    
+    border-radius: 50%;  
+     margin-right: 10px;
+     margin-top: 20px;
+
+}
+.bookingProcedureImage{
+    width: 50%;
+    background-image: url('./images/safari.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.bookingProcedureText h2{
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.stepText h3{
+  font-weight: 450;
+}
+.vid{
+    width: 250px;
+    height: 200px;
+ 
+    margin: 3px;
+    border-radius: 15px;
+}
+.customerReviewContainer{
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    justify-content: space-around;
+    gap: 10px;
+}
+.customerReviewCard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 45%;
+    background-color: #13485a;
+    padding: 10px;
+    border-radius: 20px;
+    min-height: 200px;
+    margin: 10px;
+}
+
+.customerProfile{
+    display: flex;
+    flex-direction: row;
+}
+.customerProfile img{
+    
+    border-radius: 50%;
+}
+.profileText{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+/* destinationsPageCss */
+
+.destinationsContainer{
+    width: 100%;
+    min-height: 100vh;
+    /* border: 2px solid red; */
+    color: black;
+    
+}
+.destinationsContainer h1{
+    color: black;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin: 20px;
+}
+.destinationsContainer p{
+    text-align: center;
+    margin: 20px;
+}
+.destionationNavContainer{
+    
+    display: flex;
+    justify-content: center;
+}
+.destinationNav{
+    border: 1px solid black;
+    max-width: 500px;
+    gap: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 20px;
+}
+.activeBtn{
+    background-color: rgba(0, 0, 0, 0.189);
+    transition: background-color 1s ease;
+    cursor: pointer; 
+}
+ .destinationNav button{
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    
+
+} 
+
+.destinationNav button:hover{
+    background-color: rgba(0, 0, 0, 0.189);
+    transition: background-color 1s ease;
+    cursor: pointer;
+}
+.mainContainer{
+    color: auto;
+}
+/* accomodatoinPage */
+.accomodationContainer{
+    display: none;
+   
+
+}
+.charityHotelCard{
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-height: 350px;
+    /* min-width: 400px; */
+    margin: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.charityHotelBackground{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: end;
+}
+
+.charityHotelDetails{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+
+    position: absolute;
+   
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.charityHotelDetails button{
+    font-family: "Quicksand", sans-serif;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.charityHotelDetails button:hover{
+    border: none;
+    background: white;
+    color: black;
+    transition: background-color 1s ease;
+}
+.charityHotelDetails h3{
+    
+    text-decoration: underline;
+    padding: 10px;
+    width: 100%;
+}
+
+/* transportationPage */
+.transportationContainer{
+    min-height: 50vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* destinationationsPage */
+.subDestinatinationsContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+.loctaionCard{
+    
+    background-image: url('./images/mombasa.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-height: 350px;
+    /* min-width: 400px; */
+    margin: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.locationBackground{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: end;
+    
+      
+}
+.locationText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 100%;
+    padding: 5px;
+    gap: 20px;
+}
+.locationText p{
+    text-align: start;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+}
+.locationPrice h3{
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    
+}
+.locationPlace h3{
+    font-family: "Playfair Display", serif; 
+}
+.locationPlace{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.locationPrice{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* mombasaCard */
+
+.mombasaLoctaionCard{
+    background-image: url('./images/mombasa.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-height: 350px;
+    /* min-width: 400px; */
+    margin: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.mombasaLocationBackground{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: end;
+    
+}
+.mombasaDetails{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+
+    position: absolute;
+   
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+   
+}
+.destinationStars{
+    display: flex;
+   justify-content: space-between;
+   
+   width: 100%;
+   padding: 10px;
+}
+ul{
+    
+    list-style-type: none;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+li{
+    
+    display: flex;
+    align-items: center;
+}
+
+.mombasaDetails h3{
+    
+    text-decoration: underline;
+    padding: 10px;
+    width: 100%;
+}
+.mombasaDetails button{
+    font-family: "Quicksand", sans-serif;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.mombasaDetails button:hover{
+    border: none;
+    background: white;
+    color: black;
+    transition: background-color 1s ease;
+}
+
+
+/* capeTown */
+.capeTownloctaionCard{
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-height: 350px;
+    /* min-width: 400px; */
+    margin: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.capeTownlocationBackground{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: end;
+}
+.capeTownDetails{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+
+    position: absolute;
+   
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.capeTownDetails button{
+    font-family: "Quicksand", sans-serif;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.capeTownDetails button:hover{
+    border: none;
+    background: white;
+    color: black;
+    transition: background-color 1s ease;
+}
+.capeTownDetails h3{
+    
+    text-decoration: underline;
+    padding: 10px;
+    width: 100%;
+}
+
+/* serengeti */
+
+.serengetiLoctaionCard{
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-height: 350px;
+    /* min-width: 400px; */
+    margin: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.serengetiLocationBackground{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: end;
+}
+.serengetiDetails{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+
+    position: absolute;
+   
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.serengetiDetails button{
+    font-family: "Quicksand", sans-serif;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.serengetiDetails button:hover{
+    border: none;
+    background: white;
+    color: black;
+    transition: background-color 1s ease;
+}
+.serengetiDetails h3{
+    
+    text-decoration: underline;
+    padding: 10px;
+    width: 100%;
+}
+
+/* MountKIlinjaro */
+
+.kilimanjaroLoctaionCard{
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-height: 350px;
+    /* min-width: 400px; */
+    margin: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.kilimanjaroLocationBackground{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: end;
+}
+.kilimanjaroDetails{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+
+    position: absolute;
+   
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.kilimanjaroDetails button{
+    font-family: "Quicksand", sans-serif;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.kilimanjaroDetails button:hover{
+    border: none;
+    background: white;
+    color: black;
+    transition: background-color 1s ease;
+}
+.kilimanjaroDetails h3{
+    
+    text-decoration: underline;
+    padding: 10px;
+    width: 100%;
+}
+
+/* NairobiNAitionalPark */
+
+.nairobiParkLoctaionCard{
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-height: 350px;
+    /* min-width: 400px; */
+    margin: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.nairobiParkLocationBackground{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: end;
+}
+.nairobiParkDetails{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+
+    position: absolute;
+   
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.nairobiParkDetails button{
+    font-family: "Quicksand", sans-serif;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.nairobiParkDetails button:hover{
+    border: none;
+    background: white;
+    color: black;
+    transition: background-color 1s ease;
+}
+.nairobiParkDetails h3{
+    
+    text-decoration: underline;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Amboseli */
+
+.amboseliLoctaionCard{
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-height: 350px;
+    /* min-width: 400px; */
+    margin: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.amboseliLocationBackground{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: end;
+}
+.amboseliDetails{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+
+    position: absolute;
+   
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.amboseliDetails button{
+    font-family: "Quicksand", sans-serif;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.amboseliDetails button:hover{
+    border: none;
+    background: white;
+    color: black;
+    transition: background-color 1s ease;
+}
+.amboseliDetails h3{
+    
+    text-decoration: underline;
+    padding: 10px;
+    width: 100%;
+}
+
+/* chalbiDesert */
+.chalbiLoctaionCard{
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-height: 350px;
+    /* min-width: 400px; */
+    margin: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.chalbiLocationBackground{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: end;
+}
+.chalbiDetails{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.416);
+
+    position: absolute;
+   
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.chalbiDetails button{
+    font-family: "Quicksand", sans-serif;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.chalbiDetails button:hover{
+    border: none;
+    background: white;
+    color: black;
+    transition: background-color 1s ease;
+}
+.chalbiDetails h3{
+    
+    text-decoration: underline;
+    padding: 10px;
+    width: 100%;
+}
+
+/* RWanda */
+
+.rwandaLoctaionCard{
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-height: 350px;
+    /* min-width: 400px; */
+    margin: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.rwandaLocationBackground{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: end;
+}
+.rwandaDetails{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.416);
+
+    position: absolute;
+   
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.rwandaDetails button{
+    font-family: "Quicksand", sans-serif;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.rwandaDetails button:hover{
+    border: none;
+    background: white;
+    color: black;
+    transition: background-color 1s ease;
+}
+.rwandaDetails h3{
+    
+    text-decoration: underline;
+    padding: 10px;
+    width: 100%;
+}
+/* tsavoPark */
+.tsavoLoctaionCard{
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-height: 350px;
+    /* min-width: 400px; */
+    margin: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.tsavoLocationBackground{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: end;
+}
+.tsavoDetails{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.416);
+
+    position: absolute;
+   
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.tsavoDetails button{
+    font-family: "Quicksand", sans-serif;
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.tsavoDetails button:hover{
+    border: none;
+    background: white;
+    color: black;
+    transition: background-color 1s ease;
+}
+.tsavoDetails h3{
+    
+    text-decoration: underline;
+    padding: 10px;
+    width: 100%;
+}
+
+footer{
+    background-color: #13485a;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer p{
+    margin: 5px 0 6px 0;
+    
+  
+}
+.phoneNos{
+    display: flex;
+    
+}
+.cells{
+    margin: 5px 0 6px 2px;
+    
+}
+footer ul a{
+    color: white;
+    text-decoration: none;
+}
+.footerContact{
+   
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.footerContact a{
+    color: white;
+}
+.FAQContainer{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    
+
+}
+.questionAnswer{
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    min-width: 50%;
+    
+}
+
+.question1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
+
+
+.answer1{
+    padding: 10px;
+    display: none;
+}
+.question2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
+
+
+.answer2{
+    padding: 10px;
+    display: none;
+}
+
+/* qustion3 */
+.question3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+.answer3{
+    padding: 10px;
+    display: none;
+}
+/* quetion4 */
+.question4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+.answer4{
+    padding: 10px;
+    display: none;
+}
+/* question5 */
+.question5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.answer5{
+    padding: 10px;
+    display: none;
+}
+/* question6 */
+.question6{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.answer6{
+    padding: 10px;
+    display: none;
+}
+.upIcon{
+    display: none;
+}
+.impertantLinks a{
+    color: white;
+}
+.impertantLinks a:hover{
+    text-decoration: none;
+}
+.teamContainer{
+   
+    min-height: 400px;
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+    padding: 50px;
+}
+.contact{
+    display: flex;
+    
+    width: 40%;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+.contact i:hover{
+    text-decoration: underline;
+
+    
+}
+.stuffbtn button{
+    margin-bottom: 20px;
+    width: 95px;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    background: #13485a;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    transition: background 1s ease;
+}
+.stuffbtn{
+    
+    display: flex;
+    justify-content: center;
+}
+.stuffbtn button:hover{
+    border: 2px solid #13485a ;
+    background-color: transparent;
+    color: black;
+}
+.stuffCard{
+    max-width: 250px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: auto;
+    height: 350px;
+    border-radius:0 0 40px 0 ;
+   
+}
+.stuffimage{
+    min-width:249px;
+    height: 50%;
+    
+    border-radius:0 0 40px 0 ;
+    
+}
+.stuffimage img{
+    height: 100%;
+    width: 100%;
+    border-radius:0 0 25px 0 ;
+}
+.stufftext{
+    /* padding: 10px; */
+    margin-left: 3px;
+}
+.stufftext h4{
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: larger;
+}
+.stufftext p{
+    
+    margin: 10px 0;
+}
+.contact a{
+    color: black;
+}
+
+@media(max-width:768px){
+    .navBtn{
+        display: none;
+    }
+    .nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .homeAboutText{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .homeAbout h1{
+        font-size: 3rem; 
+    }
+     .img1{
+        display: none;
+     }
+    .img4{
+        display: none;   
+    }
+    .favDestinations{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .bookingProcedureContainer{
+        color: black;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        border-radius: 15px;
+    
+    }
+    .bookingProcedureText{
+        width: 100%;
+    }
+    .bookingProcedureImage{
+        width: 100%;
+        height: 50vh;
+        background-image: url('./images/safari.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 15px
+    }
+    .vid{
+        width: 150px;
+        height: 100px;
+     
+        margin: 3px;
+        border-radius: 15px;
+    }
+    .customerReviewContainer{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+    }
+    .customerReviewCard{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-width: 70%;
+        background-color: #13485a;
+        padding: 10px;
+        border-radius: 20px;
+        min-height: 200px;
+        margin: 20px;
+    }
+    .forth{
+        display: none;
+    }
+    .subDestinatinationsContainer{
+        display: grid;
+        grid-template-columns: auto auto ;
+        justify-content: center;
+    }
+    .questionAnswer{
+        width: 100%;
+    }
+    .FAQContainer{
+        grid-template-columns: auto;
+    }
+  
+    .teamContainer{
+        grid-template-columns: auto  auto;
+        justify-content: center;
+    }
+    .hide{
+        display: none;
+    }
+}
+
+@media(max-width:500px){
+    .sideBar{
+        width: 100%;
+    }
+    .subDestinatinationsContainer{
+        display: grid;
+        grid-template-columns: auto ;
+        justify-content: center;
+    }
+    .destinationNav{
+        border: 1px solid black;
+        max-width: 500px;
+        gap: 10px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        padding: 3px 0;
+        border-radius: 20px;
+    }
+    footer{
+        background-color: #13485a;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .teamContainer{
+        grid-template-columns: auto  ;
+        justify-content: center;
+    }
+    .hideMobile{
+        display: none;
+    }
+} 
+
+
+
+/* gallerycss */
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+.imageGallery{
+display: grid;
+grid-template-columns: auto auto auto;
+
+gap: 20px;
+align-items: center;
+justify-content: center;
+padding: 20px;
+z-index: 1;
+background-color: #13485a79;
+} 
+.imageGallery img{
+    height: 200px;
+}
+.lightbox{
+    display: none;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.776);
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+.lightboxImage{
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.close,.prev,.next{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: transparent;
+    border: none;
+    outline: none;
+    opacity: 0.6;
+    bottom: 50%;
+    color: white;
+}
+.close{
+
+    right: 10px;
+    top: 10px;
+}
+.close:hover{
+    opacity: 1;
+}
+.prev{
+    left: 10px;
+}
+.prev:hover{
+    opacity: 1;}
+.next{
+    right: 10px;
+}
+.next:hover{
+    opacity: 1;
+}
+@media(max-width:768px){
+    .imageGallery{
+        display: grid;
+        grid-template-columns: auto ;
+        /* grid-template-rows: auto auto auto; */
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        z-index: 1;
+        } 
+}
+
+
