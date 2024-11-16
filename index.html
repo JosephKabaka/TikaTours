@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -55,7 +58,7 @@
        
     </nav>
     <div class="home ">
-    <div class="text">
+    <div class="text" data-aos="fade-down" data-aos-duration="1000" >
         <div class="homeAbout">
             <h1>Explore The <br> Majestic Africa <br> With Us</h1>
         <button onclick="openDestination()" >DESTINATIONS <i class="fa-solid fa-arrow-right-long"></i></button>
@@ -65,9 +68,9 @@
             }
         </script>
         <div class="homeAboutText">
-            <div class="p">
+            <div class="p" >
                 <div class="svgBackGround"><i class="fa-solid fa-plane"></i></div>
-                <p>  Explore Africa's wonders <br> with our trusted agency.</p>
+                <p >  Explore Africa's wonders <br> with our trusted agency.</p>
             </div>
             <div class="p">
                 <div class="svgBackGround"><i class="fa-solid fa-mountain-sun"></i></div> 
@@ -91,7 +94,7 @@
  <h3 style="color: black;text-decoration: underline;padding: 10px;">Our Favourite Destinations</h3>
  <div class="favDestinations ">
 
-  <div class="destinationImage img1">
+  <div class="destinationImage img1" data-aos="fade-right" data-aos-duration="1000">
     <div class="placeCardText">
         <div class="place">
             <h3>Mombasa</h3>
@@ -104,7 +107,7 @@
      
     </div>
   </div>
-  <div class="destinationImage img2">
+  <div class="destinationImage img2" data-aos="fade-right" data-aos-duration="1000">
     <div class="placeCardText">
         <div class="place">
             <h3>Cape Town</h3>
@@ -116,7 +119,7 @@
         </div>
     </div>
   </div>
-  <div class="destinationImage img3">
+  <div class="destinationImage img3" data-aos="fade-left" data-aos-duration="1000">
     <div class="placeCardText">
         <div class="place">
             <h3>Serengeti National Park</h3>
@@ -560,5 +563,10 @@
  
     
 </body>
+<script>
+    AOS.init();
+  </script>
 <script src="index.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </html>
